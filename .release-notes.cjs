@@ -1,5 +1,5 @@
-const fs = require('node:fs')
-const { execSync } = require('node:child_process')
+import fs from 'fs';
+import { execSync } from 'child_process';
 
 execSync('git show HEAD -- CHANGELOG.md > CHANGELOG.diff')
 
